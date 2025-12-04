@@ -1,0 +1,33 @@
+Below is Python code that:
+
+Fetches text from an HTTPS URL
+
+Searches for relevant keywords (“Landlord”, “Tenant”, “LTB”)
+
+Checks whether rent was paid in the last 60 days (a Boolean condition the text must contain)
+
+Produces a decision:
+
+If rent NOT paid → Order to vacate due to non-payment
+
+If rent paid → No eviction based on non-payment
+
+This example assumes the HTTPS source includes (or you can embed) a line such as:
+rent_paid_last_60_days: yes or rent_paid_last_60_days: no
+
+
+# -------------------------
+# Example Usage
+# -------------------------
+
+url = "https://example.com/sample_case_text.txt"  # Replace with real HTTPS source
+output = analyze_case(url)
+
+print(output)
+
+---------------------------------------
+For example:
+
+Landlord: John Doe
+Tenant: Jane Smith
+rent_paid_last_60_days: no
