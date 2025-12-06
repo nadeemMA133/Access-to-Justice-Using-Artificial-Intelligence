@@ -1,0 +1,12 @@
+This is a sample (basic) code for modular Python example that follows the logic.
+It:
+
+Takes case filing date and checks whether it is 3 years old or more → if yes, mark as priority.
+
+Takes dispute amount → if ≤ $35,000, collect more details.
+
+If > $35,000, route to a judge.
+
+Otherwise (≤ $35,000), route to an AI engine for decision.
+
+You can adjust prompts, logging, and integrations as needed.
